@@ -14,12 +14,6 @@ assignees: sanjP10
 # Describe the bug
 A clear and concise description of what the bug is.
 
-
-# Hosting
-* [ ] SaaS (i.e. Github.com, Gitlab.com, Bitbucket.com, AWS, GCP)
-* [ ] Self Hosted
-
-
 # To Reproduce
 Steps to reproduce the behaviour (including settings of git repository and action syntax used):
 
