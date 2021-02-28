@@ -57,4 +57,4 @@ create:
 
 If you are intending on creating workflows that are based on the [release event](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release).
 You need to use a token that is not the [github.token](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#github-context) variable.
-This needs to be a Personal Access Token that is associated to a user, which is also where the [github.actor](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#github-context) may need to be static if your repository is shared across multiple users.
+This needs to be a Personal Access Token(PAT) that is associated to a user, which is also where [github.actor](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#github-context) is used by default as the user may need to be charged to a static user associated with the PAT if the repository is shared across multiple users.
