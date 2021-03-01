@@ -4,6 +4,6 @@
 
 ### Added
 
-* Initial composite action for release@3.1.3
+* Initial composite action for release@3.1.4
 * Workflows
 * Templates for Issues and Pull Requests
