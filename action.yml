@@ -1,0 +1,32 @@
+name: 'sanjP10/release-action'
+description: 'Verify and Create tags using sanjP10/release tool'
+inputs:
+  operation:
+    description: Operation to run. Defaults to 'validate' operation
+    required: false
+    default: validate
+  user:
+    description: User to tag the repository. Defaults to Github Actor
+    required: false
+    default: ${{ github.actor }}
+  token:
+    description: Personal access token (PAT) used to tag the repository. Defaults to Github token
+    required: false
+    default: ${{ github.token }}
+  changelog-file-location:
+    description: Location of changelog file
+    required: true
+branding:
+  icon: 'tag'
+  color: 'green'
+outputs:
+  version:
+    description: "Version validated/created"
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.operation }}
+    - ${{ inputs.user }}
+    - ${{ inputs.token }}
+    - ${{ inputs.changelog-file-location }}
