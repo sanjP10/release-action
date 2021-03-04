@@ -16,6 +16,10 @@ inputs:
   changelog-file-location:
     description: Location of changelog file
     required: true
+  host:
+    description: Host override
+    required: false
+    default: ''
 branding:
   icon: 'tag'
   color: 'green'
@@ -30,3 +34,4 @@ runs:
     - ${{ inputs.user }}
     - ${{ inputs.token }}
     - ${{ inputs.changelog-file-location }}
+    - ${{ inputs.host }}

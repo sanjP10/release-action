@@ -15,6 +15,7 @@ This exposes the use of the tool with a github action interface.
 | user                    | User to use when validating/creating the release                                                      | [github.actor](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#github-context) |
 | token                   | Personal Access Token to use when validating/creating                                                 | [github.token](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#github-context) |
 | changelog-file-location | Relative location of changelog file from root of git repository. This is **required**                 |          |
+| host                    | If using self-hosted github, this needs to be where you provide the full base url                     |          |
 
 ### Outputs
 You can use this to get the version number that has been or is to be created, and use it for other tools such as docker.
