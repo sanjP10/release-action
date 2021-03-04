@@ -5,10 +5,8 @@
 This is an action that enables the use of the tool [release](https://github.com/sanjP10/release) in a github action.
 This exposes the use of the tool with a github action interface.
 
-Release is a tool that validates and creates tags against git repos by reading your changelog file.
-
-It requires a markdown formatted changelog, with the most recent changes at the top.
-
+Release is a tool that validates and creates tags against git repos by reading your changelog file. 
+It requires a markdown formatted changelog, with the most recent changes at the top. 
 The that consists of a version must start with a `h2` markup and have a number afterwards.
 
 An example changelog would be
@@ -40,6 +38,7 @@ major.minor
 major.minor.patch
 major.minor.patch.micro
 ```
+***Note: the format must be consistent within the changelog***
 
 ## Variables
 
