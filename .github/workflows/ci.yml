@@ -32,7 +32,7 @@ jobs:
     needs:
       - validate
       - lint
-    if: ${{ github.ref == 'refs/heads/master' }}
+    if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -40,7 +40,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Release
-        uses: sanjP10/release-action@master
+        uses: sanjP10/release-action@main
         id: release
         with:
           changelog-file-location: CHANGELOG.md
@@ -48,7 +48,7 @@ jobs:
 
 
   create:
-    if: ${{ github.ref == 'refs/heads/master' }}
+    if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     needs:
       - integrationTest
@@ -58,7 +58,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Release
-        uses: sanjP10/release-action@master
+        uses: sanjP10/release-action@main
         id: release
         with:
           changelog-file-location: CHANGELOG.md
