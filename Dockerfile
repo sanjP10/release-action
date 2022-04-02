@@ -1,7 +1,7 @@
 # Container image that runs your code
-FROM golang:1.15.8-alpine
+FROM golang:1.18.0-alpine
 
-RUN GO111MODULE=on go get -u github.com/sanjP10/release@3.2.0
+RUN go install github.com/sanjP10/release@3.2.1
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
 
