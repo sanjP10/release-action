@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM golang:1.21.5-alpine
+FROM golang:1.24-alpine
 
 RUN apk add build-base=0.5-r3 --no-cache && rm -rf /var/cache/apk/*
 RUN go install github.com/sanjP10/release@3.2.2
